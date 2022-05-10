@@ -15,13 +15,13 @@ test('log console errors', async ({ page }) => {
     
 
     for (const data of dataJSON) {
-        page.on("console",msg => {
+        page.on("console", msg => {
             // console.log(msg.type());
-            if(msg.type() == "error"){
+            if (msg.type() == "error") {
                 console.log("Console Error found on " + data.url + " " + msg.text());
                 logger.error("Console Error found on " + data.url + " " + msg.text());
             }
-            else if (msg == "" && msg.type() != "error"){
+            else if (msg == "" && msg.type() != "error") {
                 console.log("There is no console error found on " + data.url);
                 logger.error("There is no console error found on " + data.url);
             }
