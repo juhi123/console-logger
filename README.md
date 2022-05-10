@@ -10,3 +10,6 @@ To run this for your URLs, you should just replace the URLs in `data/sampleUrls.
 
 ### Run the command to get console errors in interactive mode
 `npm run test-console:watch`
+
+### Issues
+If you face any issue, feel free to report
