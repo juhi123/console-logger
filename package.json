@@ -1,7 +1,7 @@
 {
     "name": "console-logger",
     "description": "Logs the console errors",
-    "version": "0.1",
+    "version": "0.0.1",
     "scripts": {
       "parse:csv": "node ./bin/csv-parser.js",
       "test-console": "npm run parse:csv && playwright test --config playwright.config.js",
